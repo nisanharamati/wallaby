@@ -99,7 +99,7 @@ def encoder(data):
     # data is a string
     return data + "\n"
 
-@computation(T.str >= T.str)
+@computation(T.str >> T.str)
 def reverse(data):
     return data[::-1]
 
